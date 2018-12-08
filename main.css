@@ -1,0 +1,243 @@
+@font-face {
+font-family:Madi;
+src:url("fonts/AmaticSC-Bold.ttf");
+}
+
+.header {
+      position: fixed;
+        font-size:4em;
+        width: 100%;
+        left: 0px;
+        top: 0px;
+        z-index: +1;
+        background-color: #333333;
+        min-width:800px;
+
+}
+
+.header2 {
+	position: fixed;
+	font-size:3em;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: +1;
+	background-color: #333333;
+	min-width:800px;
+	padding-bottom:80px;
+	border-bottom: 1px solid gray;
+
+}
+.content {
+	position: relative;
+	z-index:-1;
+	min-width:900px;
+}
+
+h1 {
+	color:white;
+	font-family:'Madi';
+	margin-bottom: -80px;
+	margin-top: 40px;
+	}
+
+td, th {
+	border: 2px solid #333333;
+	border-radius: 5px;
+	background-color: gray;
+	font-family:Madi;
+	font-size:2em;
+}
+
+.tdownload  {
+    font-family: Madi;
+    font-size: 2.5em;
+}
+
+.tdownload:hover {
+  opacity: .7;
+}
+
+.divfade:hover {
+	background:gray;
+	opacity:.75;
+}
+
+.CE {
+	margin-left: 180px;
+	font-family: monospace;
+	color: gray;
+}
+
+.contact {
+	text-align: center;
+	width: 100%;
+	height:60px;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	color:white;
+	font-family: monospace;
+	z-index: +1;
+	background-color: #333333;
+	min-width:900px;
+	padding-top: 10px;
+}
+
+
+a:link, a {
+	text-decoration: none;
+	color: white;
+}
+
+.a, .b, .c, .d, .e, .f {
+	position: relative;
+	float: left;
+    width: 400px;
+    height: 225px;
+	margin: 5px;
+	top: 300px;
+
+}
+
+a, a:active, a:focus {
+outline: none;
+}
+
+.twitter {
+	background-image: url("images/twitter.jpg");
+	margin: 4px;
+	width: 30px;
+	height: 30px;
+}
+.facebook {
+	background-image: url("images/facebook.jpg");
+	margin: 4px;
+	width: 30px;
+	height: 30px;
+}
+.youtube {
+	background-image: url("images/youtube.jpg");
+	margin: 4px;
+	width: 30px;
+	height: 30px;
+}
+.pinterest {
+	background-image: url("images/pinterest.jpg");
+	margin: 4px;
+	width: 30px;
+	height: 30px;
+}
+
+.links {
+	z-index: 2;
+	position: fixed;
+	bottom: 2px;
+	left: 45%;
+	min-width:900px;
+}
+
+.a {
+	background-image: url("images/Die Essenz des Guten01.jpg");
+}
+.a:hover {
+	background-image: url("images/Die Essenz des Guten02.jpg");
+
+}
+.b {
+    background-color: gray;
+}
+.c {
+    background-color: lightblue;
+}
+.d {
+    background-color: #000000;
+}
+.e {
+	background-color: darkgrey;
+}
+.f {
+	background-color: lightblue;
+}
+
+.menu {
+	position: fixed;
+	top: 0;
+	z-index: 2;
+    right: 0;
+    left: 0;
+    margin-right: auto;
+    margin-left: auto;
+    min-height: 10em;
+	min-width:900px;
+}
+
+
+body {
+  	font-family: 'Lucida Grande', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+ 	font-size: 0.8em;
+  	text-align: center;
+	background-color: #333333;
+	padding: 0 150px 40px 150px;
+	min-width:900px;
+}
+
+ul {
+
+	text-align: left;
+	display: inline;
+	margin: 0;
+	padding: 15px 4px 17px 0;
+	list-style: none;
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	-moz-box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+ul li {
+	  font: bold 12px/18px sans-serif;
+	  display: inline-block;
+	  margin-right: -4px;
+	  position: relative;
+	  padding: 15px 20px;
+	  background: #fff;
+	  cursor: pointer;
+	  -webkit-transition: all 0.2s;
+	  -moz-transition: all 0.2s;
+	  -ms-transition: all 0.2s;
+	  -o-transition: all 0.2s;
+	  transition: all 0.2s;
+}
+ul li:hover {
+	  background: #555;
+	  color: #fff;
+}
+ul li ul {
+	  padding: 0;
+	  position: absolute;
+	  top: 48px;
+	  left: 0;
+	  width: 150px;
+	  -webkit-box-shadow: none;
+	  -moz-box-shadow: none;
+	  box-shadow: none;
+	  display: none;
+	  opacity: 0;
+	  visibility: hidden;
+	  -webkit-transiton: opacity 0.2s;
+	  -moz-transition: opacity 0.2s;
+	  -ms-transition: opacity 0.2s;
+	  -o-transition: opacity 0.2s;
+	  -transition: opacity 0.2s;
+}
+ul li ul li {
+	  background: #555;
+	  display: block;
+	  color: #fff;
+	  text-shadow: 0 -1px 0 #000;
+}
+ul li ul li:hover { background: #666; }
+ul li:hover ul {
+	  display: block;
+	  opacity: 1;
+	  visibility: visible;
+}
