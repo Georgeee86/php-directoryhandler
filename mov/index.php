@@ -2,7 +2,7 @@
 
 <html>
   <head>
-    <link type="text/css" rel="stylesheet" href="css/main.css"/>
+    <link type="text/css" rel="stylesheet" href="../css/main.css"/>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   </head>
   <body>
@@ -14,13 +14,13 @@
 
 <?php
 
-include "php/classes/calcFilesize.php";
+include "../php/classes/calcFilesize.php";
 
-$files = scandir('mov/');
+$files = scandir('.');
 for ($i=0; $i <= count($files)-1; $i++) {
   if ($files[$i] != '.' && $files[$i] != '..' && $files[$i] != 'index.php')
   {
-    echo '<tr><td class="tdownload";><a href=?path=mov/'.$files[$i].'>'.$files[$i].'</a></td>';
+    echo '<tr><td class="tdownload";><a href=?path=.'.$files[$i].'>'.$files[$i].'</a></td>';
     echo '<td>'.calcfs(filesize($files[$i])).'</td>';
     echo '<td>'.date("d F y H:i:s",filemtime($files[$i])).'</td>';
     echo '<td style="background-image:url(../covers/'.substr($files[$i], 0, strrpos($files[$i], ".")).'.jpeg);
